@@ -19,7 +19,7 @@ const About = () => {
             software developer, I'm always learning to evolve in the dynamic
             world of software engineering. With global experiences living in
             five countries and exploring 19 others, I'm committed to making a
-            positive impact. Actively contributing to 'Heeno International,'
+            positive impact. Actively contributing to 'Heeno International',
             proudly serving as a Community Advisor at SFU Residence and Housing,
             and honored with the Mahatma Gandhi Annual Student Award, I've led
             multiple fundraisers and community service projects. Join me in the
