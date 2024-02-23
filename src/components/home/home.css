@@ -19,6 +19,9 @@
   font-size: 1.25rem;
   color: var(--title-color);
   transition: transform 0.3s ease-in-out 0.1s;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
 }
 
 .home__social-icon:hover {
