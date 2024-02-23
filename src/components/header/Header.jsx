@@ -83,16 +83,16 @@ const Header = () => {
             </li>
             <li className="nav__item">
               <a
-                href="#projects"
-                onClick={() => setActiveNav("#projects")}
+                href="#portfolio"
+                onClick={() => setActiveNav("#portfolio")}
                 className={
-                  activeNav === "#projects"
+                  activeNav === "#portfolio"
                     ? "nav__link active-link"
                     : "nav__link"
                 }
               >
                 <HiOutlinePuzzle className="nav__icon" />
-                Projects
+                Portfolio
               </a>
             </li>
             <li className="nav__item">

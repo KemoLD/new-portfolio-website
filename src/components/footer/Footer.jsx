@@ -20,8 +20,8 @@ const Footer = () => {
             </a>
           </li>
           <li>
-            <a href="#projects" className="footer__link">
-              Projects
+            <a href="#portfolio" className="footer__link">
+              Portfolio
             </a>
           </li>
         </ul>
