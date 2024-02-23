@@ -5,11 +5,11 @@ import {
   HiOutlineBriefcase,
   HiOutlineCalendar,
 } from "react-icons/hi";
-import sfu from "../../assets/sfu.jpeg";
-import diligent from "../../assets/diligent.jpeg";
-import apollo from "../../assets/apollo-insurance.jpeg";
-import later from "../../assets/later.jpeg";
-import wenso from "../../assets/wenso.jpeg";
+import sfu from "../../assets/qualification/sfu.jpeg";
+import diligent from "../../assets/qualification/diligent.jpeg";
+import apollo from "../../assets/qualification/apollo-insurance.jpeg";
+import later from "../../assets/qualification/later.jpeg";
+import wenso from "../../assets/qualification/wenso.jpeg";
 
 const Qualification = () => {
   const [toggleState, setToggleState] = useState(1);

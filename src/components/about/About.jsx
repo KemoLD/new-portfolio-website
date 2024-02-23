@@ -1,6 +1,6 @@
 import React from "react";
 import "./about.css";
-import AboutImg from "../../assets/roster_picture.jpeg";
+import AboutImg from "../../assets/about/roster_picture.jpeg";
 import CV from "../../assets/Nyarika_kemo_sonko_resume.pdf";
 import Info from "./Info";
 
