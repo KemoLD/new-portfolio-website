@@ -14,18 +14,16 @@ const About = () => {
         <div className="about__data">
           <Info />
           <p className="about__description">
-            Hey there! I'm Kemo, a student-athlete playing basketball in
-            Division 2 NCAA, infusing those skills into teamwork and leadership.
-            As a passionate software developer, I'm constantly learning new tech
-            and skills to evolve in the dynamic world of software engineering.
-            Flourishing globally with experiences living in five countries and
-            exploring 19 others, I'm deeply committed to making a positive
-            impact. Actively contributing to 'Heeno International' and proudly
-            serving as a Community Advisor at SFU Residence and Housing. Honored
-            with the Mahatma Gandhi Annual Student Award, I've led five
-            fundraisers and community service projects, including international
-            trips. Join me in the mix of tech passion, global adventures, and
-            the joy of giving back!
+            Hey there! I'm Kemo, a student-athlete in Division 2 NCAA, blending
+            basketball skills into teamwork and leadership. As a dedicated
+            software developer, I'm always learning to evolve in the dynamic
+            world of software engineering. With global experiences living in
+            five countries and exploring 19 others, I'm committed to making a
+            positive impact. Actively contributing to 'Heeno International,'
+            proudly serving as a Community Advisor at SFU Residence and Housing,
+            and honored with the Mahatma Gandhi Annual Student Award, I've led
+            multiple fundraisers and community service projects. Join me in the
+            mix of tech passion, global adventures, and the joy of giving back!
           </p>
           <a download="" href={CV} className="button button--flex">
             Download CV
