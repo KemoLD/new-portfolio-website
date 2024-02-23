@@ -58,14 +58,14 @@ const Frontend = () => {
           </div>
           <div className="skills__data">
             <img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg"
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redux/redux-original.svg"
               title="Java"
               alt="Java"
               width="30"
               height="30"
             />
             <div>
-              <h3 className="skills__name">Java</h3>
+              <h3 className="skills__name">Redux</h3>
             </div>
           </div>
           <div className="skills__data">

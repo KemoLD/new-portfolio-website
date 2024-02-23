@@ -20,6 +20,18 @@ const Backend = () => {
           </div>
           <div className="skills__data">
             <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg"
+              title="Java"
+              alt="Java"
+              width="30"
+              height="30"
+            />
+            <div>
+              <h3 className="skills__name">Java</h3>
+            </div>
+          </div>
+          <div className="skills__data">
+            <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original.svg"
               title="Spring Boot"
               alt="Spring Boot"

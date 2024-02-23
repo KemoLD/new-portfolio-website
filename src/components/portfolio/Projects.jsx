@@ -34,7 +34,7 @@ const Projects = () => {
                 handleClick(e, index);
               }}
               className={`${
-                active === index ? "active-project" : ""
+                active === index ? "active__project" : ""
               } project__item`}
               key={index}
             >

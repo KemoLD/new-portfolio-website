@@ -2,6 +2,7 @@ import roomtree1 from "../../assets/projects/roomtree/jointhetree.jpg";
 import renewU from "../../assets/projects/renewU/video.mp4";
 import zoomin from "../../assets/projects/zoomIn/Zoom_in.png";
 import covidTracker from "../../assets/projects/covidTracker/covid_tracker.png";
+import oldPortfolio from "../../assets/projects/oldPortfolio/old_portfolio.png";
 
 export const projectsData = [
   {
@@ -35,7 +36,7 @@ export const projectsData = [
   },
   {
     id: 3,
-    image: roomtree1,
+    image: oldPortfolio,
     title: "Old Portfolio Website",
     category: ["Web", "Side Project"],
     description:

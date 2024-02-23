@@ -5,11 +5,13 @@ import TechStack from "./TechStack";
 const ProjectItems = ({ item }) => {
   return (
     <div className="project__card" key={item.id}>
-      {item.video ? (
-        <video className="project__video" src={item.video} controls />
-      ) : (
-        <img className="project__img" src={item.image} alt={item.title} />
-      )}
+      <div className="project__media">
+        {item.video ? (
+          <video className="project__video" src={item.video} controls />
+        ) : (
+          <img className="project__img" src={item.image} alt={item.title} />
+        )}
+      </div>
       <h3 className="project__title">{item.title}</h3>
       <h2 className="project__description">{item.description}</h2>
       <div className="project__stack">
@@ -18,12 +20,14 @@ const ProjectItems = ({ item }) => {
       <div className="project__buttons-container">
         {item.source && (
           <a href={item.source} className="project__button">
-            Source <HiOutlineArrowSmRight className="project__button-icon" />
+            Source Code
+            <HiOutlineArrowSmRight className="project__button-icon" />
           </a>
         )}
         {item.live && (
           <a href={item.live} className="project__button">
-            Live <HiOutlineArrowSmRight className="project__button-icon" />
+            Live Site
+            <HiOutlineArrowSmRight className="project__button-icon" />
           </a>
         )}
       </div>
