@@ -18,10 +18,12 @@
 .home__social-icon {
   font-size: 1.25rem;
   color: var(--title-color);
+  transition: transform 0.3s ease-in-out 0.1s;
 }
 
 .home__social-icon:hover {
   color: var(--title-color-dark);
+  transform: rotate(360deg);
 }
 
 .home__title {
