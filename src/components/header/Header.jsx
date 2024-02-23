@@ -4,10 +4,11 @@ import {
   HiOutlineHome,
   HiOutlineUser,
   HiOutlineBadgeCheck,
-  HiOutlinePhotograph,
+  HiOutlinePuzzle,
   HiOutlineMail,
   HiX,
   HiOutlineMenu,
+  HiOutlineClipboardCheck,
 } from "react-icons/hi";
 
 const Header = () => {
@@ -71,12 +72,26 @@ const Header = () => {
                 href="#portfolio"
                 onClick={() => setActiveNav("#portfolio")}
                 className={
+                  activeNav === "#certifications"
+                    ? "nav__link active-link"
+                    : "nav__link"
+                }
+              >
+                <HiOutlineClipboardCheck className="nav__icon" />
+                Certifications
+              </a>
+            </li>
+            <li className="nav__item">
+              <a
+                href="#portfolio"
+                onClick={() => setActiveNav("#portfolio")}
+                className={
                   activeNav === "#portfolio"
                     ? "nav__link active-link"
                     : "nav__link"
                 }
               >
-                <HiOutlinePhotograph className="nav__icon" />
+                <HiOutlinePuzzle className="nav__icon" />
                 Projects
               </a>
             </li>

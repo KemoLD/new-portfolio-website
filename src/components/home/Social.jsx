@@ -6,7 +6,7 @@ const Social = () => {
   return (
     <div className="home__social">
       <a
-        href="https://github.com/KemoLD#:~:text=Check%20out%20my-,roster%20entry,-."
+        href="https://athletics.sfu.ca/sports/mens-basketball/roster/kemo-sonko/6134"
         className="home__social-icon"
         target="_blank"
         rel="noreferrer"
