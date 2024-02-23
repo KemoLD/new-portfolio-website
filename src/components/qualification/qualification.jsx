@@ -175,7 +175,7 @@ const Qualification = () => {
                   title="Wenso Ltd"
                   className="qualification__img"
                 />
-                <h3 className="qualification__title">Product Manager Inter</h3>
+                <h3 className="qualification__title">Product Manager Intern</h3>
                 <span className="qualification__subtitle">Wenso Ltd</span>
                 <div className="qualification__calendar">
                   <HiOutlineCalendar className="qualification__calendar-icon" />

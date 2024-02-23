@@ -1,5 +1,4 @@
 import React from "react";
-import { HiCheckBadge } from "react-icons/hi2";
 
 const Infrastructure = () => {
   return (
