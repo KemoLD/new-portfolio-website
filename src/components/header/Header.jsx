@@ -48,21 +48,19 @@ const Header = () => {
     if (homeRef.current) observer.observe(homeRef.current);
     if (aboutRef.current) observer.observe(aboutRef.current);
     if (skillsRef.current) observer.observe(skillsRef.current);
-    if (qualificationRef.current) observer.observe(qualificationRef.current);
-    if (portfolioRef.current) observer.observe(portfolioRef.current);
-    if (contactRef.current) observer.observe(contactRef.current);
-    // Observe other refs...
+    const homeRefCurrent = homeRef.current;
+    const aboutRefCurrent = aboutRef.current;
+    const skillsRefCurrent = skillsRef.current;
+    const qualificationRefCurrent = qualificationRef.current;
+    const portfolioRefCurrent = portfolioRef.current;
+    const contactRefCurrent = contactRef.current;
 
-    return () => {
-      if (homeRef.current) observer.unobserve(homeRef.current);
-      if (aboutRef.current) observer.unobserve(aboutRef.current);
-      if (skillsRef.current) observer.unobserve(skillsRef.current);
-      if (qualificationRef.current)
-        observer.unobserve(qualificationRef.current);
-      if (portfolioRef.current) observer.unobserve(portfolioRef.current);
-      if (contactRef.current) observer.unobserve(contactRef.current);
-      // Unobserve other refs...
-    };
+    if (homeRefCurrent) observer.unobserve(homeRefCurrent);
+    if (aboutRefCurrent) observer.unobserve(aboutRefCurrent);
+    if (skillsRefCurrent) observer.unobserve(skillsRefCurrent);
+    if (qualificationRefCurrent) observer.unobserve(qualificationRefCurrent);
+    if (portfolioRefCurrent) observer.unobserve(portfolioRefCurrent);
+    if (contactRefCurrent) observer.unobserve(contactRefCurrent);
   }, [
     aboutRef,
     contactRef,
