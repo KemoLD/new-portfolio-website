@@ -28,8 +28,13 @@ const About = () => {
             multiple fundraisers and community service projects. Join me in the
             mix of tech passion, global adventures, and the joy of giving back!
           </p>
-          <a download="" href={CV} className="button button--flex">
-            Download CV
+          <a
+            href={CV}
+            className="button button--flex"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View Resume
             <svg
               class="button__icon"
               xmlns="http://www.w3.org/2000/svg"
