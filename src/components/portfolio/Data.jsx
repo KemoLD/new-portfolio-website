@@ -2,13 +2,17 @@ import roomtree1 from "../../assets/projects/roomtree/jointhetree.jpg";
 import zombieSweeper from "../../assets/projects/zombieSweeper/zombie.png";
 import renewU from "../../assets/projects/renewU/video.mp4";
 import zoomin from "../../assets/projects/zoomIn/Zoom_in.png";
+import zoomin1 from "../../assets/projects/zoomIn/Zoom-in1.png";
+import zoomin2 from "../../assets/projects/zoomIn/Zoom-in2.png";
+import zoomin3 from "../../assets/projects/zoomIn/Zoom-in3.png";
+import zoomin4 from "../../assets/projects/zoomIn/Zoom-in4.png";
 import covidTracker from "../../assets/projects/covidTracker/covid_tracker.png";
 import oldPortfolio from "../../assets/projects/oldPortfolio/old_portfolio.png";
 
 export const projectsData = [
   {
     id: 1,
-    image: roomtree1,
+    images: [roomtree1],
     title: "RoomTree",
     category: ["App", "Startup"],
     description:
@@ -26,7 +30,7 @@ export const projectsData = [
   },
   {
     id: 2,
-    image: zombieSweeper,
+    images: [zombieSweeper],
     title: "Zombie Sweeper",
     category: ["App", "Side Project"],
     description:
@@ -47,7 +51,7 @@ export const projectsData = [
   },
   {
     id: 4,
-    image: oldPortfolio,
+    images: [oldPortfolio],
     title: "Old Portfolio Website",
     category: ["Web", "Side Project"],
     description:
@@ -58,7 +62,7 @@ export const projectsData = [
   },
   {
     id: 5,
-    image: zoomin,
+    images: [zoomin, zoomin1, zoomin2, zoomin3, zoomin4],
     title: "Zoom In",
     category: ["Web", "Side Project"],
     description:
@@ -69,7 +73,7 @@ export const projectsData = [
   },
   {
     id: 6,
-    image: covidTracker,
+    images: [covidTracker],
     title: "Covid-19 Tracker",
     category: ["Web", "Side Project"],
     description:
