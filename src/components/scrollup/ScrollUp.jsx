@@ -10,6 +10,7 @@ const ScrollUp = () => {
   });
 
   return (
+    // eslint-disable-next-line jsx-a11y/anchor-is-valid
     <a href="#" className="scrollup">
       <HiOutlineArrowSmUp className="scrollup__icon" />
     </a>
