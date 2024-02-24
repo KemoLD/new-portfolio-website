@@ -11,7 +11,7 @@ const Contact = () => {
   const { contactRef } = useContext(RefsContext);
   const form = useRef();
 
-  const sendEmail = (e) => {
+  const sendEmail = async (e) => {
     e.preventDefault();
 
     // Get form data
@@ -25,19 +25,18 @@ const Contact = () => {
       }
     }
 
-    emailjs
-      .sendForm(
+    try {
+      await emailjs.sendForm(
         process.env.REACT_APP_EMAILJS_SERVICE_ID,
         process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
         form.current,
         process.env.REACT_APP_EMAILJS_PUBLIC_KEY
-      )
-      .then(() => {
-        toast.success("Email sent successfully");
-      })
-      .catch((error) => {
-        toast.error("An error occurred, please try again");
-      });
+      );
+
+      toast.success("Email sent successfully");
+    } catch (error) {
+      toast.error("An error occurred, please try again");
+    }
 
     e.target.reset();
   };
