@@ -30,6 +30,9 @@ const Contact = () => {
       )
       .then(() => {
         toast.success("Email sent successfully");
+      })
+      .catch((error) => {
+        toast.error("An error occurred, please try again");
       });
 
     e.target.reset();
