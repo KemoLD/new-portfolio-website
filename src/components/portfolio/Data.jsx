@@ -16,7 +16,7 @@ export const projectsData = [
     title: "RoomTree",
     category: ["App", "Startup"],
     description:
-      "RoomTree, my innovative housing app, addresses the housing crisis for Canadian students and young adults. It simplifies the roommate and living space search by considering not only budget and location but also lifestyle preferences like age, gender, diet, drug usage, occupation, and party habits. RoomTree goes beyond basic criteria to enhance the housing experience for its users.",
+      "RoomTree, my innovative housing app, addresses the housing crisis for Canadian students and young adults. It simplifies the roommate and shared living search by considering not only budget and location but also lifestyle preferences like age, gender, diet, drug usage, occupation, and party habits. RoomTree goes beyond basic criteria to enhance the housing experience for its users.",
     stack: [
       "JavaScript",
       "TypeScript",
