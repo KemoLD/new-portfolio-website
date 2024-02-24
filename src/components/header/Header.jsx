@@ -36,8 +36,6 @@ const Header = () => {
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            console.log("moved");
-            console.log(entry.target);
             setActiveNav(`#${entry.target.id}`);
           }
         });
@@ -45,22 +43,25 @@ const Header = () => {
       { threshold: 0.3 } // Adjust this value if needed
     );
 
-    if (homeRef.current) observer.observe(homeRef.current);
-    if (aboutRef.current) observer.observe(aboutRef.current);
-    if (skillsRef.current) observer.observe(skillsRef.current);
-    const homeRefCurrent = homeRef.current;
-    const aboutRefCurrent = aboutRef.current;
-    const skillsRefCurrent = skillsRef.current;
-    const qualificationRefCurrent = qualificationRef.current;
-    const portfolioRefCurrent = portfolioRef.current;
-    const contactRefCurrent = contactRef.current;
+    const refs = [
+      homeRef,
+      aboutRef,
+      skillsRef,
+      qualificationRef,
+      portfolioRef,
+      contactRef,
+    ];
 
-    if (homeRefCurrent) observer.unobserve(homeRefCurrent);
-    if (aboutRefCurrent) observer.unobserve(aboutRefCurrent);
-    if (skillsRefCurrent) observer.unobserve(skillsRefCurrent);
-    if (qualificationRefCurrent) observer.unobserve(qualificationRefCurrent);
-    if (portfolioRefCurrent) observer.unobserve(portfolioRefCurrent);
-    if (contactRefCurrent) observer.unobserve(contactRefCurrent);
+    refs.forEach((ref) => {
+      if (ref.current) observer.observe(ref.current);
+    });
+
+    // Cleanup function
+    return () => {
+      refs.forEach((ref) => {
+        if (ref.current) observer.unobserve(ref.current);
+      });
+    };
   }, [
     aboutRef,
     contactRef,

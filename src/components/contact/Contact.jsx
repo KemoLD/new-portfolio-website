@@ -14,6 +14,17 @@ const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
+    // Get form data
+    const formData = new FormData(form.current);
+
+    // Check if all form fields are non-empty
+    for (let value of formData.values()) {
+      if (value === "") {
+        toast.error("Please fill out all fields");
+        return;
+      }
+    }
+
     emailjs
       .sendForm(
         process.env.REACT_APP_EMAILJS_SERVICE_ID,
