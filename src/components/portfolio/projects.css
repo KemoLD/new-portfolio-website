@@ -10,7 +10,6 @@
 .project__item {
   color: var(--title-color);
   padding: 0.25rem 0.75rem;
-
   font-weight: var(--font-medium);
   border-radius: 0.5rem;
   text-transform: capitalize;
@@ -28,6 +27,8 @@
 }
 
 .project__card {
+  display: flex;
+  flex-direction: column;
   background-color: var(--container-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
   padding: 1.25rem;
@@ -70,7 +71,16 @@
 .project__buttons-container {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  margin-top: auto;
+}
+
+.project__button-source {
+  align-self: flex-start;
+}
+
+.project__button-site {
+  margin-left: auto;
+  align-self: flex-end;
 }
 
 .project__button {
