@@ -57,7 +57,7 @@ export const projectsData = [
     description:
       "My Old Porfolio website built with NextJS, ThreeJS and Chakra-UI. It was a fun project to work on and I learned a lot about 3D web development.",
     stack: ["JavaScript", "CSS", "ThreeJS", "NextJS"],
-    live: "https://renewu.netlify.app/",
+    live: "https://kemooldportfolio.vercel.app/",
     source: "https://github.com/KemoLD/portfolio_website",
   },
   {
