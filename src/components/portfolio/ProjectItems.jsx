@@ -9,7 +9,7 @@ const ProjectItems = ({ item }) => {
         {item.video ? (
           <video className="project__video" src={item.video} controls />
         ) : (
-          <img className="project__img" src={item.image} alt={item.title} />
+          <img className="project__img" src={item.images[0]} alt={item.title} />
         )}
       </div>
       <h3 className="project__title">{item.title}</h3>
