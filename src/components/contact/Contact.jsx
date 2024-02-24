@@ -20,13 +20,6 @@ const Contact = () => {
         process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
         form.current,
         process.env.REACT_APP_EMAILJS_PUBLIC_KEY
-
-        /*
-        "service_xsl5w8l",
-        "template_kmaz2mp",
-        form.current,
-        "S7_VfLJRj8q76R5O2"
-        */
       )
       .then(() => {
         toast.success("Email sent successfully");
