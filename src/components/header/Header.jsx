@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useContext } from "react";
+import RefsContext from "../../context/refsContext";
 import "./header.css";
 import {
   HiOutlineHome,
@@ -20,6 +21,56 @@ const Header = () => {
 
   const [Toggle, showMenu] = useState(false);
   const [activeNav, setActiveNav] = useState("#home");
+
+  const {
+    homeRef,
+    aboutRef,
+    skillsRef,
+    qualificationRef,
+    portfolioRef,
+    contactRef,
+  } = useContext(RefsContext);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            console.log("moved");
+            console.log(entry.target);
+            setActiveNav(`#${entry.target.id}`);
+          }
+        });
+      },
+      { threshold: 0.3 } // Adjust this value if needed
+    );
+
+    if (homeRef.current) observer.observe(homeRef.current);
+    if (aboutRef.current) observer.observe(aboutRef.current);
+    if (skillsRef.current) observer.observe(skillsRef.current);
+    if (qualificationRef.current) observer.observe(qualificationRef.current);
+    if (portfolioRef.current) observer.observe(portfolioRef.current);
+    if (contactRef.current) observer.observe(contactRef.current);
+    // Observe other refs...
+
+    return () => {
+      if (homeRef.current) observer.unobserve(homeRef.current);
+      if (aboutRef.current) observer.unobserve(aboutRef.current);
+      if (skillsRef.current) observer.unobserve(skillsRef.current);
+      if (qualificationRef.current)
+        observer.unobserve(qualificationRef.current);
+      if (portfolioRef.current) observer.unobserve(portfolioRef.current);
+      if (contactRef.current) observer.unobserve(contactRef.current);
+      // Unobserve other refs...
+    };
+  }, [
+    aboutRef,
+    contactRef,
+    homeRef,
+    portfolioRef,
+    qualificationRef,
+    skillsRef,
+  ]);
 
   return (
     <header className="header">

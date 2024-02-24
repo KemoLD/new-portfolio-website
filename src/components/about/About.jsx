@@ -1,12 +1,15 @@
-import React from "react";
+import React, { useContext } from "react";
+import RefsContext from "../../context/refsContext";
 import "./about.css";
 import AboutImg from "../../assets/about/roster_picture.jpeg";
 import CV from "../../assets/Nyarika_kemo_sonko_resume.pdf";
 import Info from "./Info";
 
 const About = () => {
+  const { aboutRef } = useContext(RefsContext);
+
   return (
-    <section className="about section" id="about">
+    <section className="about section" id="about" ref={aboutRef}>
       <h2 className="section__title">About Me</h2>
       <span className="section__subtitle">A short introduction</span>
       <div className="about__container container grid">

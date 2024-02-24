@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useRef } from "react";
 import "./App.css";
+import RefsContext from "./context/refsContext";
 import Header from "./components/header/Header";
 import Home from "./components/home/Home";
 import About from "./components/about/About";
@@ -11,21 +12,38 @@ import Portfolio from "./components/portfolio/Portfolio";
 import Contact from "./components/contact/Contact";
 
 function App() {
-  return (
-    <div className="App">
-      <Header />
+  const homeRef = useRef(null);
+  const aboutRef = useRef(null);
+  const skillsRef = useRef(null);
+  const qualificationRef = useRef(null);
+  const portfolioRef = useRef(null);
+  const contactRef = useRef(null);
 
-      <main className="main">
-        <Home />
-        <About />
-        <Skills />
-        <Qualification />
-        <Portfolio />
-        <Contact />
-      </main>
-      <Footer />
-      <ScrollUp />
-    </div>
+  return (
+    <RefsContext.Provider
+      value={{
+        homeRef,
+        aboutRef,
+        skillsRef,
+        qualificationRef,
+        portfolioRef,
+        contactRef,
+      }}
+    >
+      <div className="App">
+        <Header />
+        <main className="main">
+          <Home />
+          <About />
+          <Skills />
+          <Qualification />
+          <Portfolio />
+          <Contact />
+        </main>
+        <Footer />
+        <ScrollUp />
+      </div>
+    </RefsContext.Provider>
   );
 }
 

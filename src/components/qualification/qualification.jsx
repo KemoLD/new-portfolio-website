@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
+import RefsContext from "../../context/refsContext";
 import "./qualification.css";
 import {
   HiOutlineAcademicCap,
@@ -12,6 +13,7 @@ import later from "../../assets/qualification/later.jpeg";
 import wenso from "../../assets/qualification/wenso.jpeg";
 
 const Qualification = () => {
+  const { qualificationRef } = useContext(RefsContext);
   const [toggleState, setToggleState] = useState(1);
 
   const toggleTab = (index) => {
@@ -19,7 +21,11 @@ const Qualification = () => {
   };
 
   return (
-    <section className="qualification section" id="qualification">
+    <section
+      className="qualification section"
+      id="qualification"
+      ref={qualificationRef}
+    >
       <h2 className="section__title">Qualification</h2>
       <span className="section__subtitle">My Journey</span>
 

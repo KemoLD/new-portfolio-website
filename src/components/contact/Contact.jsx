@@ -1,4 +1,5 @@
-import React, { useRef } from "react";
+import React, { useRef, useContext } from "react";
+import RefsContext from "../../context/refsContext";
 import "./contact.css";
 import { HiOutlineMail, HiOutlineArrowSmRight } from "react-icons/hi";
 import emailjs from "@emailjs/browser";
@@ -7,6 +8,7 @@ import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 const Contact = () => {
+  const { contactRef } = useContext(RefsContext);
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -34,7 +36,7 @@ const Contact = () => {
   };
 
   return (
-    <section className="contact section" id="contact">
+    <section className="contact section" id="contact" ref={contactRef}>
       <h2 className="section__title">Let's Connect</h2>
       <span className="section__subtitle">Contact Me</span>
 
