@@ -51,6 +51,11 @@
   font-weight: var(--font-medium);
 }
 
+.skills__icon {
+  width: 30px;
+  height: 30px;
+}
+
 /* BREAK POINTS */
 @media screen and (max-width: 992px) {
   .skills__container {
@@ -67,14 +72,19 @@
   .skills__content {
     padding: 1.5rem;
   }
+
+  .skills__name {
+    font-size: var(--small-font-size);
+  }
+
+  .skills__icon {
+    width: 20px;
+    height: 20px;
+  }
 }
 
 @media screen and (max-width: 350px) {
   .skills__box {
     column-gap: 1.25rem;
-  }
-
-  .skills__name {
-    font-size: var(--small-font-size);
   }
 }

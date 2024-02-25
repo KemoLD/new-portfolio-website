@@ -11,8 +11,7 @@ const Backend = () => {
               src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg"
               title="NodeJS"
               alt="NodeJS"
-              width="30"
-              height="30"
+              className="skills__icon"
             />
             <div>
               <h3 className="skills__name">NodeJS</h3>
@@ -23,8 +22,7 @@ const Backend = () => {
               src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg"
               title="Java"
               alt="Java"
-              width="30"
-              height="30"
+              className="skills__icon"
             />
             <div>
               <h3 className="skills__name">Java</h3>
@@ -35,8 +33,7 @@ const Backend = () => {
               src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original.svg"
               title="Spring Boot"
               alt="Spring Boot"
-              width="30"
-              height="30"
+              className="skills__icon"
             />
             <div>
               <h3 className="skills__name">Spring Boot</h3>
@@ -49,8 +46,7 @@ const Backend = () => {
               src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg"
               title="Express"
               alt="Express"
-              width="30"
-              height="30"
+              className="skills__icon"
             />
             <div>
               <h3 className="skills__name">Express</h3>
@@ -61,8 +57,7 @@ const Backend = () => {
               src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg"
               title="PosgreSQL"
               alt="PosgreSQL"
-              width="30"
-              height="30"
+              className="skills__icon"
             />
             <div>
               <h3 className="skills__name">PosgreSQL</h3>

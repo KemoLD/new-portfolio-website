@@ -11,8 +11,7 @@ const Frontend = () => {
               src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
               title="JavaScript"
               alt="JavaScript"
-              width="30"
-              height="30"
+              className="skills__icon"
             />
             <div>
               <h3 className="skills__name">JavaScript</h3>
@@ -23,8 +22,7 @@ const Frontend = () => {
               src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
               title="React/React-Native"
               alt="React/React-Native"
-              width="30"
-              height="30"
+              className="skills__icon"
             />
             <div>
               <h3 className="skills__name">React/React-Native</h3>
@@ -35,8 +33,7 @@ const Frontend = () => {
               src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
               title="HTML"
               alt="HTML"
-              width="30"
-              height="30"
+              className="skills__icon"
             />
             <div>
               <h3 className="skills__name">HTML</h3>
@@ -49,8 +46,7 @@ const Frontend = () => {
               src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"
               title="Typecript"
               alt="TypeScript"
-              width="30"
-              height="30"
+              className="skills__icon"
             />
             <div>
               <h3 className="skills__name">TypeScript</h3>
@@ -61,8 +57,7 @@ const Frontend = () => {
               src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redux/redux-original.svg"
               title="Java"
               alt="Java"
-              width="30"
-              height="30"
+              className="skills__icon"
             />
             <div>
               <h3 className="skills__name">Redux</h3>
@@ -73,8 +68,7 @@ const Frontend = () => {
               src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"
               title="CSS"
               alt="CSS"
-              width="30"
-              height="30"
+              className="skills__icon"
             />
             <div>
               <h3 className="skills__name">CSS</h3>

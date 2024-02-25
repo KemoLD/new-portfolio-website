@@ -57,10 +57,7 @@ const Contact = () => {
               <h3 className="contact__card-title">Email</h3>
               <span className="contact__card-data">ksonko@sfu.ca</span>
 
-              <a
-                href="mailto:cyphersylph@gmail.com"
-                className="contact__button"
-              >
+              <a href="mailto:ksonko@sfu.ca" className="contact__button">
                 Send Email{" "}
                 <HiOutlineArrowSmRight className="contact__button-icon" />
               </a>
