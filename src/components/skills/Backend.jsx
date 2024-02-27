@@ -55,12 +55,12 @@ const Backend = () => {
           <div className="skills__data">
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg"
-              title="PosgreSQL"
-              alt="PosgreSQL"
+              title="PostgreSQL"
+              alt="PostgreSQL"
               className="skills__icon"
             />
             <div>
-              <h3 className="skills__name">PosgreSQL</h3>
+              <h3 className="skills__name">PostgreSQL</h3>
             </div>
           </div>
         </div>
