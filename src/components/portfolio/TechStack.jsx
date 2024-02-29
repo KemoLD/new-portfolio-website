@@ -41,6 +41,8 @@ const stackImages = {
   Android:
     "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/android/android-original.svg",
   PHP: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg",
+  Python:
+    "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg",
 };
 
 const TechStack = ({ stack }) => {
